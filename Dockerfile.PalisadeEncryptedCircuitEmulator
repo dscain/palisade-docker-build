@@ -1,4 +1,4 @@
-ARG branch=v1.11.0
+ARG branch=master
 ARG tag=v1.11.0
 
 FROM danielscain/palisade-development:$tag

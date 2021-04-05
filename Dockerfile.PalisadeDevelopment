@@ -1,7 +1,7 @@
 FROM ubuntu-base
 
 ARG repository="palisade-development"
-ARG branch=v1.11.0
+ARG branch=master
 ARG tag=v1.11.0
 ARG CC_param=/usr/bin/gcc-10
 ARG CXX_param=/usr/bin/g++-10
