@@ -1,11 +1,11 @@
 FROM ubuntu-base
 
 ARG repository="palisade-development"
-ARG branch=master
-ARG tag=master
+ARG branch=v1.11.0
+ARG tag=v1.11.0
 ARG CC_param=/usr/bin/gcc-10
 ARG CXX_param=/usr/bin/g++-10
-ARG no_threads=1
+ARG no_threads=4
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV CC $CC_param

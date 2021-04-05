@@ -13,7 +13,7 @@ docker build -f ./Dockerfile.UbuntuBase -t ubuntu-base .
 Then build Palisade libs:
 
 ```bash
-TAG=master
+TAG=v1.11.0
 docker build -f ./Dockerfile.PalisadeDevelopment -t danielscain/palisade-development:$TAG . --build-arg branch=$TAG  --build-arg tag=$TAG
 docker build -f ./Dockerfile.PalisadeEncryptedCircuitEmulator -t danielscain/palisade-encrypted-circuit-emulator:$TAG . --build-arg branch=$TAG  --build-arg tag=$TAG
 ```
@@ -26,7 +26,7 @@ docker run -v $(pwd):/palisade -p 50022:22 -ti danielscain/palisade-development 
 # Pushing
 Push the images:
 ```bash
-TAG=master
+TAG=v1.11.0
 docker push danielscain/palisade-development:$TAG
 docker push danielscain/palisade-encrypted-circuit-emulator:$TAG
 ```
